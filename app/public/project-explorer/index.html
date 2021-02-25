@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      height: 100%;
+    }
+    nav {
+      width: 100% !important;
+      margin: 0 !important;
+    }
+    main {
+      margin: 24px;
+    }
+
+    footer {
+      background-color: rgb(235, 233, 233);
+      padding: 8px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      /* Height of the footer*/
+      height: 40px;
+    }
+    footer p {
+      padding: 0;
+      margin: 0;
+    }
+  </style>
+  <body>
+    <nav class="row navbar navbar-dark bg-primary navbar-expand-lg">
+      <a class="navbar-brand" href="index.html">Project Explorer</a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <form name="searchForm" class="form-inline my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search Projects"
+            aria-label="Search"
+          />
+          <button class="btn btn-primary btn-outline-light" type="submit">
+            Search
+          </button>
+        </form>
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a
+              class="nav-link disabled"
+              tabindex="-1"
+              aria-disabled="true"
+              href="createproject.html"
+              >Submit</a
+            >
+          </li>
+        </ul>
+        <div class="my-2 my-lg-0">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a
+                class="nav-link disabled"
+                tabindex="-1"
+                aria-disabled="true"
+                href="register.html"
+                >Sign up</a
+              >
+            </li>
+            <li class="nav-item active">
+              <a
+                class="nav-link disabled"
+                tabindex="-1"
+                aria-disabled="true"
+                href="login.html"
+                >Login</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div class="jumbotron">
+        <h1 class="display-4">Welcome to Project Explorer</h1>
+        <p class="lead">
+          Project Explorer is a reposiroty for final year projects across all
+          department at your institution. You can submit your project and search
+          projects submitted by others to learn from.
+        </p>
+
+        <a class="btn btn-primary btn-lg" href="register.html" role="button"
+          >Get Started</a
+        >
+        <a class="btn btn-secondary btn-lg" href="login.html" role="button"
+          >Login</a
+        >
+      </div>
+
+      <section
+        class="d-flex flex-row bd-highlight mb-3 justify-content-between"
+      >
+        <div class="card" style="width: 18rem">
+          <div class="card-body">
+            <h5 class="card-title">Project Title</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Author 1, Author 2</h6>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="card-link">#html</a>
+            <a href="#" class="card-link">#javascript</a>
+            <a href="#" class="card-link">#css</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <div class="card-body">
+            <h5 class="card-title">Project Title</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Author 1, Author 2</h6>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="card-link">#html</a>
+            <a href="#" class="card-link">#javascript</a>
+            <a href="#" class="card-link">#css</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <div class="card-body">
+            <h5 class="card-title">Project Title</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Author 1, Author 2</h6>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="card-link">#html</a>
+            <a href="#" class="card-link">#javascript</a>
+            <a href="#" class="card-link">#css</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <div class="card-body">
+            <h5 class="card-title">Project Title</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Author 1, Author 2</h6>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="card-link">#html</a>
+            <a href="#" class="card-link">#javascript</a>
+            <a href="#" class="card-link">#css</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="d-flex flex-row justify-content-end">
+      <p class="col-2">Project Explorer © 2020</p>
+      <p class="col-1">Edconnect</p>
+    </footer>
+  </body>
+</html>

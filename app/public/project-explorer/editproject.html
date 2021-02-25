@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      height: 100%;
+    }
+    nav {
+      width: 100% !important;
+      margin: 0 !important;
+    }
+    main {
+      margin: 24px;
+    }
+
+    footer {
+      background-color: rgb(235, 233, 233);
+      padding: 8px;
+      bottom: 0;
+      width: 100%;
+      /* Height of the footer*/
+      height: 40px;
+    }
+    footer p {
+      padding: 0;
+      margin: 0;
+    }
+  </style>
+  <body>
+    <nav class="row navbar navbar-dark bg-primary navbar-expand-lg">
+      <a class="navbar-brand" href="index.html">Project Explorer</a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <form name="searchForm" class="form-inline my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search Projects"
+            aria-label="Search"
+          />
+          <button class="btn btn-primary btn-outline-light" type="submit">
+            Search
+          </button>
+        </form>
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a
+              class="nav-link disabled"
+              tabindex="-1"
+              aria-disabled="true"
+              href="createproject.html"
+              >Submit</a
+            >
+          </li>
+        </ul>
+        <div class="my-2 my-lg-0">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a
+                class="nav-link disabled"
+                tabindex="-1"
+                aria-disabled="true"
+                href="register.html"
+                >Sign up</a
+              >
+            </li>
+            <li class="nav-item active">
+              <a
+                class="nav-link disabled"
+                tabindex="-1"
+                aria-disabled="true"
+                href="login.html"
+                >Login</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <section class="container">
+        <h2>Project 1</h2>
+        <div class="row row-cols-4 bg-light p-3">
+          <div class="col">
+            <div class="col-sm-6 p-0 bd-highlight">Created by:</div>
+            <div class="">John Doe</div>
+          </div>
+          <div class="col">
+            <div class="col-sm-12 p-0 bd-highlight">Date Created:</div>
+            <div class="">J00/00/00</div>
+          </div>
+          <div class="col">
+            <div class="col-sm-12 p-0 bd-highlight">Last Updated:</div>
+            <div class="">01/01/0001</div>
+          </div>
+
+          <div class="col d-flex flex-row-reverse bd-highlight">
+            <button type="submit" class="btn btn-primary">View Project</button>
+          </div>
+        </div>
+      </section>
+      <div class="container p-3">
+        <div class="row row-cols-2">
+          <div class="col">
+            <h3>Edit Project</h3>
+            <form name="editProject">
+              <div class="form-row form-group">
+                <label for="" class="col-sm-6 col-form-label"
+                  >Project Name:
+                </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Project 1"
+                  name="name"
+                />
+              </div>
+              <div class="form-row form-group">
+                <label for="" class="col-sm-6 col-form-label"
+                  >Project Abstract:
+                </label>
+                <textarea
+                  class="form-control"
+                  name="abstract"
+                  rows="10"
+                  cols="50"
+                  placeholder="Project  is very important"
+                ></textarea>
+              </div>
+
+              <div class="form-row form-group">
+                <label for="" class="col-sm-6 col-form-label"
+                  >Author(s):
+                </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Ade Chris"
+                  name="authors"
+                />
+              </div>
+              <div class="form-row form-group">
+                <label for="" class="col-sm-6 col-form-label">Tag(s): </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="#web"
+                  name="tags"
+                />
+              </div>
+              <button type="submit" class="btn btn-primary">Save</button>
+
+              <br /><br />
+            </form>
+          </div>
+          <div class="col">
+            <h3>Manage Project Files</h3>
+
+            <input type="file" name="projectFile" />
+            <div class="card">
+              <div class="card-header">Project Files</div>
+              <div class="card-body card text-center">
+                <!-- <h5 class="card-title">Special title treatment</h5> -->
+                <p class="card-text">No files uploaded yet</p>
+                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div></div>
+    </main>
+    <footer class="d-flex flex-row justify-content-end">
+      <p class="col-2">Project Explorer © 2020</p>
+      <p class="col-1">Edconnect</p>
+    </footer>
+  </body>
+</html>

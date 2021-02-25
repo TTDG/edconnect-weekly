@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      height: 100%;
+    }
+    nav {
+      width: 100% !important;
+      margin: 0 !important;
+    }
+    main {
+      margin: 24px;
+    }
+
+    footer {
+      background-color: rgb(235, 233, 233);
+      padding: 8px;
+      bottom: 0;
+      width: 100%;
+      /* Height of the footer*/
+      height: 40px;
+    }
+    footer p {
+      padding: 0;
+      margin: 0;
+    }
+  </style>
+  <body>
+    <nav class="row navbar navbar-dark bg-primary navbar-expand-lg">
+      <a class="navbar-brand" href="index.html">Project Explorer</a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <form name="searchForm" class="form-inline my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search Projects"
+            aria-label="Search"
+          />
+          <button class="btn btn-primary btn-outline-light" type="submit">
+            Search
+          </button>
+        </form>
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a
+              class="nav-link disabled"
+              tabindex="-1"
+              aria-disabled="true"
+              href="createproject.html"
+              >Submit</a
+            >
+          </li>
+        </ul>
+        <div class="my-2 my-lg-0">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a
+                class="nav-link disabled"
+                tabindex="-1"
+                aria-disabled="true"
+                href="register.html"
+                >Sign up</a
+              >
+            </li>
+            <li class="nav-item active">
+              <a
+                class="nav-link disabled"
+                tabindex="-1"
+                aria-disabled="true"
+                href="login.html"
+                >Login</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div class="mx-auto w-50 p-1">
+        <h1>Submit Project</h1>
+        <form name="submitProject" class="">
+          <div class="form-row form-group">
+            <label for="" class="col-sm-6 col-form-label">Project Name: </label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Enter Project name"
+              name="name"
+            />
+          </div>
+          <div class="form-row form-group">
+            <label for="" class="col-sm-6 col-form-label"
+              >Project Abstract:
+            </label>
+            <textarea
+              class="form-control"
+              name="abstract"
+              rows="10"
+              cols="50"
+            ></textarea>
+          </div>
+          <div class="form-row form-group">
+            <label for="" class="col-sm-6 col-form-label">Author(s): </label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Enter author names (separaed by commas)"
+              name="authors"
+            />
+          </div>
+          <div class="form-row form-group">
+            <label for="" class="col-sm-6 col-form-label">Tag(s): </label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Use # to tag projet with different topics(e.g. #javascript #mongodb)"
+              name="tags"
+            />
+          </div>
+
+          <button type="submit" class="btn btn-primary">Continue</button>
+        </form>
+      </div>
+    </main>
+    <footer class="d-flex flex-row justify-content-end">
+      <p class="col-2">Project Explorer © 2020</p>
+      <p class="col-1">Edconnect</p>
+    </footer>
+  </body>
+</html>
