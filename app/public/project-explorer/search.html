@@ -90,22 +90,23 @@
     <main>
       <section class="container">
         <h2>Project Gallery</h2>
-        <div bg-light p-3>
-          <header>Search Project By:</header>
+        <div bg-light p3>
           <form
             name="searchForm"
             class="form-row form-group bd-highlight mb-3 p-3 bg-light text-dark"
           >
             <input
-              class="col-sm-7 col-form-label form-group form-control form-control-lg"
+              class="col-sm-7 form-group form-label form-control form-control-lg"
               type="text"
               name="searchTerm"
-              placeholder="Project Name, Authors, Abstracts, Tags"
+              placeholder="Search project name, authors, abstracts, tags"
             />
-            <label class="col-sm-1 col-form-label">Search By:</label>
+            <label class="col-sm-1 col-form-label" for="searchType"
+              >Search By:</label
+            >
             <select
               name="searchType"
-              class="col-sm-2 col-form-label form-group form-control form-control-lg"
+              class="col-sm-2 form-group form-label form-control form-control-lg"
             >
               <option value="Name">Name</option>
               <option value="Abstract">Abstract</option>
@@ -113,9 +114,7 @@
               <option value="Tags">Tags</option>
             </select>
 
-            <button type="submit" class="btn btn-lg btn-primary p-2">
-              Submit
-            </button>
+            <button type="submit" class="btn btn-lg btn-primary">Submit</button>
           </form>
         </div>
 
